@@ -72,7 +72,6 @@ a{ color:inherit; }
   margin:0;
 }
 
-/* search bar */
 #searchBar{
   width: min(1100px, 95%);
   background:white;
