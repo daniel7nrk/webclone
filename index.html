@@ -1,42 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my website</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="">FeWo-Direkt</a>
-        </div>
+  <nav class="navbar" id="mainNav">
+    <div class="logo" id="siteLogo"><a href="">FeWo-Direkt</a></div>
 
-        <ul class="menu">
-            <li><a href="">Open app</a></li>
-            <li><a href="">Travel planner</a></li>
-            <li><a href="">Register accommodation</a></li>
-            <li><a href="">Help</a></li>
-            <li><a href="">My travels</a></li>
-            <li><a href="">Register</a></li>
-        </ul>
-    </nav>
+    <ul class="menu" id="navMenu">
+      <li class="menu-item"><button class="btn btn-app">Open app <img src="logo/9fc746a4-ceb6-4002-980e-0f4f2b5f8d1a.svg" alt=""></button></li>
+      <li class="menu-item"><a href="">Travel planner</a></li>
+      <li class="menu-item"><a href="">Register accommodation</a></li>
+      <li class="menu-item"><a href="">Help</a></li>
+      <li class="menu-item"><a href="">My travels</a></li>
+      <li class="menu-item"><a href="">Register</a></li>
+    </ul>
+  </nav>
 
-    <section class="poolimg">
-        <h1>The entire accommodation just for you</h1>
-        <br>
-        <div class="container">
-            <div class="box" id="box1">Where should we go?</div>
-            <div class="box" id="box2">data</div>
-            <div class="box" id="box3">Guests</div>
-            <div class="box" id="box4">seek</div>            
-        </div>
+  <section class="poolimg" id="hero">
+    <h1 id="heroTitle">The entire accommodation just for you</h1>
+
+    <div class="container" id="searchBar">
+      <div class="box" id="box1">Where should we go?</div>
+      <div class="box" id="box2">data</div>
+      <div class="box" id="box3">Guests</div>
+      <div class="box" id="box4">seek</div>
+    </div>
+  </section>
+
+
+  <section class="register" id="registerSection">
+    <div class="rbox" id="registerBar">
+      <span class="register-text" id="registerText">
+        Sign up to send the host a message and get more details about a property.
+      </span>
+      <button class="btn btn-register" id="registerBtn">Register</button>
+    </div>
+  </section>
+
+
+  <main class="page" id="pageContent">
+
+    <h2 class="section-title" id="accommodationTitle">Find the perfect accommodation</h2>
+
+    <ul class="categories" id="categoryList">
+      <li class="category-item"><a class="category-link active" href="">beachfront location</a></li>
+      <li class="category-item"><a class="category-link" href="">Pools</a></li>
+      <li class="category-item"><a class="category-link" href="">Holiday cabins</a></li>
+      <li class="category-item"><a class="category-link" href="">lake</a></li>
+      <li class="category-item"><a class="category-link" href="">For families</a></li>
+      <li class="category-item"><a class="category-link" href="">Mountains</a></li>
+      <li class="category-item"><a class="category-link" href="">Wellness</a></li>
+      <li class="category-item"><a class="category-link" href="">Pets allowed</a></li>
+    </ul>
+
+
+    <section class="houses-section" id="housesSection">
+        <div class="Houses" id="housesWrapper">
+
+            <div class="up houses-row">
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/63bb9ba7.jpg_1.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Ogunquit, USA</p>
+                <p class="houseDetails">Sleeps 8 · 3 bedrooms · 2 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">115 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€516</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/800x800_Img2V2.jpg.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Brigantine, USA</p>
+                <p class="houseDetails">Sleeps 18 · 8 bedrooms · 7 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">194 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€1,397</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/63bb9ba7.jpg_1.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Ogunquit, USA</p>
+                <p class="houseDetails">Sleeps 8 · 3 bedrooms · 2 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">115 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€516</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/63bb9ba7.jpg_1.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Brigantine, USA</p>
+                <p class="houseDetails">Sleeps 18 · 8 bedrooms · 7 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">194 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€1,397</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                    <div class="Houses" id="housesWrapper">
+
+            <div class="up houses-row">
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/63bb9ba7.jpg_1.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Ogunquit, USA</p>
+                <p class="houseDetails">Sleeps 8 · 3 bedrooms · 2 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">115 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€516</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/800x800_Img2V2.jpg.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Brigantine, USA</p>
+                <p class="houseDetails">Sleeps 18 · 8 bedrooms · 7 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">194 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€1,397</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/63bb9ba7.jpg_1.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Ogunquit, USA</p>
+                <p class="houseDetails">Sleeps 8 · 3 bedrooms · 2 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">115 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€516</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="Houses houses-col">
+                <div class="houseCard">
+                <img class="houseImg" src="house/63bb9ba7.jpg_1.jpeg" alt="">
+                <p class="houseType">House</p>
+                <p class="houseLocation">Brigantine, USA</p>
+                <p class="houseDetails">Sleeps 18 · 8 bedrooms · 7 bathrooms</p>
+
+                <div class="bottomRow">
+                    <div class="reviews">
+                    <span class="score">10.0</span>
+                    <span class="reviewCount">194 reviews</span>
+                    </div>
+                    <div class="priceBox">
+                    <p class="price">€1,397</p>
+                    <p class="night">Average per night</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+      </div>
+
+      <a class="more-link" id="showMoreLink" href="">Show more accommodations →</a>
     </section>
-    
-  
 
 
-    <script src="index.js"></script>
+
+
+    <section class="info-strip" id="infoStrip">
+      <div class="info-card">
+        <p class="info-title">We know exactly the right place.</p>
+        <p class="info-text">On the beach. Or right by the slopes. Find accommodation for every occasion.</p>
+      </div>
+
+      <div class="info-card">
+        <p class="info-title">Carefree with FeWo-direkt™</p>
+        <p class="info-text">If anything goes wrong during your stay, we are here for you – we want to find a good solution for you.</p>
+      </div>
+
+      <div class="info-card">
+        <p class="info-title">There for you day and night.</p>
+        <p class="info-text">Real people. Real support. Around the clock - before, during, or after your stay.</p>
+      </div>
+    </section>
+
+
+
+
+    <section class="promo promo-large" id="promoLarge">
+      <div class="promo-box">
+        <img class="promo-img" src="images/0715606c.jpg.jpeg" alt="">
+        <div class="promo-text">
+          <p class="promo-title">Early bird offers:</p>
+          <p class="promo-title">Save over €80</p>
+          <p class="promo-desc">Save big when you book early. Average savings are €106. Only on selected holiday rentals.*</p>
+          <button class="btn">Book now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo promo-grid" id="promoGrid">
+      <div class="promo-card">
+        <img src="house/800x800_Img2V2.jpg.jpeg" alt="">
+        <p class="promo-small">Top accommodations for spring</p>
+        <p class="promo-desc">Pool, beach, lake or perhaps mountains?</p>
+        <button class="btn">Show accommodation</button>
+      </div>
+
+      <div class="promo-card">
+        <img src="images/Pet-Friendly_HP-Tile-carousel_800x800.jpg.jpeg" alt="">
+        <p class="promo-small">Out and about with your four-legged friend</p>
+        <p class="promo-desc">Take your favorite people and pets with you on your next getaway.</p>
+        <button class="btn">Explore pet-friendly accommodations</button>
+      </div>
+
+      <div class="promo-card">
+        <img src="house/1391393-0_2-Stadium.jpg_1.jpeg" alt="">
+        <p class="promo-small">They cheer together</p>
+        <p class="promo-desc">Discover North America's soccer cities from your vacation rental</p>
+        <button class="btn">Book now</button>
+      </div>
+    </section>
+
+
+
+    <section class="promo promo-large" id="rentOut">
+      <div class="promo-box">
+        <img class="promo-img" src="images/bbc49032.jpg.jpeg" alt="">
+        <div class="promo-text">
+          <p class="promo-title">Rent out your accommodation with confidence using FeWo-direkt</p>
+          <p class="promo-desc">Real-time support, quick and easy registration, and guests with positive feedback – with FeWo-direkt, hosting feels like a holiday.</p>
+          <button class="btn">List your accommodation</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-section" id="aboutSection">
+      <h3>Was ist FeWo-direkt?</h3>
+      <p>
+        Besonders Familien und Gruppen wissen die Vorteile von Ferienunterkünften zu schätzen: mehr 
+        Platz, mehr Privatsphäre, mehr Annehmlichkeiten. Du hast mehr Flexibilität und Freiheit in 
+        deinen eigenen vier Wänden als in herkömmlichen Hotels und kannst deinen Urlaub frei planen 
+        - unabhängig davon, ob du eine Städtereise machen oder mit deinem Hund inmitten der 
+        malerischen Natur abschalten möchtest. Du suchst eine gemütliche Ferienhütte in den 
+        Bergen mit Waschmaschine und Whirlpool? Ein Strandhaus am Wasser oder eine große Finca 
+        im Süden mit Pool und voll ausgestatteter Küche? Kein Problem, denn Ferienunterkünfte gibt 
+        es in allen Größen und mit jeder Wunschausstattung, die dir für deinen nächsten 
+        Familienurlaub, Abenteuertrip mit Freunden oder ein romantisches Wochenende vorschwebt.
+      </p>
+
+      <h3>Ferienwohnung oder Ferienhaus mieten: Das sind die Vorteile</h3>
+      <p>
+        Besonders Familien und Gruppen wissen die Vorteile von Ferienunterkünften zu schätzen: mehr 
+        Platz, mehr Privatsphäre, mehr Annehmlichkeiten. Du hast mehr Flexibilität und Freiheit in 
+        deinen eigenen vier Wänden als in herkömmlichen Hotels und kannst deinen Urlaub frei planen 
+        - unabhängig davon, ob du eine Städtereise machen oder mit deinem Hund inmitten der 
+        malerischen Natur abschalten möchtest. Du suchst eine gemütliche Ferienhütte in den Bergen 
+        mit Waschmaschine und Whirlpool? Ein Strandhaus am Wasser oder eine große Finca im Süden 
+        mit Pool und voll ausgestatteter Küche? Kein Problem, denn Ferienunterkünfte gibt es in 
+        allen Größen und mit jeder Wunschausstattung, die dir für deinen nächsten Familienurlaub, 
+        Abenteuertrip mit Freunden oder ein romantisches Wochenende vorschwebt.        
+      </p>
+    </section>
+
+  </main>
+
+  <script src="index.js"></script>
 </body>
 </html>

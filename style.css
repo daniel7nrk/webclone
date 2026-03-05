@@ -1,77 +1,330 @@
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#fff;
+  color:#111;
+}
+a{ color:inherit; }
+
+.page{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 15px 40px;
+  background:white;
+  border-bottom:1px solid #eee;
 }
-
-.menu{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-}
-
-.menu a{
-    text-decoration: none;
-    color: black;
-}
-
 .logo a{
-    color: #2b57cf;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
+  color:#2b57cf;
+  font-weight:bold;
+  font-size:20px;
+  text-decoration:none;
 }
-main{
-    text-align: center;
-    padding: 0px;
+.menu{
+  list-style:none;
+  display:flex;
+  gap:22px;
+  margin:0;
+  padding:0;
+  align-items:center;
 }
+.menu a{
+  text-decoration:none;
+  font-size:14px;
+  color:#222;
+}
+.btn-app{
+  border:1px solid #cfcfd6;
+  background:white;
+  padding:6px 12px;
+  border-radius:999px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
 .poolimg{
-    height: 60vh;
-    width: 100%;
+  height: 60vh;
+  background-image:url("images/1335316-0_2-VRBO_HERO_Pool_L-2X.jpg.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 
-    background-image: url(images/1335316-0_2-VRBO_HERO_Pool_L-2X.jpg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  gap:18px;
+  padding:0 20px;
 }
 .poolimg h1{
-    color: white;
-    font-size: 48px;
-    text-align: center;
+  color:white;
+  font-size:44px;
+  margin:0;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
+
+/* search bar */
+#searchBar{
+  width: min(1100px, 95%);
+  background:white;
+  padding:14px;
+  border-radius:18px;
+
+  display:flex;
+  gap:12px;
+  align-items:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 .box{
-    width: 200px;
-    height: 20px;
-    font-size: 3em;
-    border-radius: 15px;
-
-}
-
-
-#box1{
-    background-color: white;
-    
-}
-#box2{
-    background-color: white;
-
-}
-#box3{
-    background-color: white;
-
+  flex:1;
+  height:52px;
+  display:flex;
+  align-items:center;
+  padding:0 14px;
+  border-radius:12px;
+  border:1px solid #cfcfd6;
+  font-size:16px;
+  background:#fff;
 }
 #box4{
-    background-color: rgb(39, 51, 182);
+  flex:0 0 auto;
+  width:110px;
+  justify-content:center;
+  border:none;
+  background:rgb(39, 51, 182);
+  color:white;
+  font-weight:600;
+  border-radius:999px;
+}
 
+.register{
+  padding: 18px 40px;
+  background:#fff;
+}
+.rbox{
+  max-width: 1100px;
+  margin: 0 auto;
+  background:#1e2a4a;
+  color:white;
+  border-radius:14px;
+  padding:16px 18px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  font-size:14px;
+}
+#registerBtn{
+  position:absolute;
+  right:18px;
+  background:transparent;
+  border:1px solid #fff;
+  color:#fff;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.section-title{
+  margin: 25px 0 12px;
+  font-size:28px;
+}
+
+.categories{
+  list-style:none;
+  display:flex;
+  gap:22px;
+  padding:0 0 14px;
+  margin:0 0 20px;
+  border-bottom:1px solid #eee;
+  align-items:flex-end;
+}
+.category-link{
+  text-decoration:none;
+  font-size:14px;
+  color:#222;
+  padding-bottom:10px;
+}
+.category-link.active{
+  color:#1a57ff;
+  border-bottom:2px solid #1a57ff;
+}
+
+.houses-row{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:18px;
+  margin-top: 18px;
+}
+.houseCard{
+  background:#fff;
+  border:1px solid #e7e7e7;
+  border-radius:14px;
+  overflow:hidden;
+}
+.houseImg{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+.houseType{
+  color:#666;
+  font-size:13px;
+  margin:10px 12px 0;
+}
+.houseLocation{
+  font-weight:bold;
+  margin:6px 12px 0;
+}
+.houseDetails{
+  color:#666;
+  font-size:13px;
+  margin:6px 12px 0;
+}
+.bottomRow{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 12px 12px;
+}
+.score{
+  background:#0a7a2f;
+  color:white;
+  padding:2px 6px;
+  border-radius:5px;
+  font-size:12px;
+  margin-right:6px;
+}
+.reviews{
+  font-size:12px;
+  color:#222;
+}
+.priceBox{
+  text-align:right;
+}
+.price{
+  margin:0;
+  font-size:18px;
+  font-weight:bold;
+}
+.night{
+  margin:0;
+  font-size:12px;
+  color:#666;
+}
+.more-link{
+  display:inline-block;
+  margin-top: 14px;
+  color:#1a57ff;
+  text-decoration:none;
+}
+
+.info-strip{
+  margin-top: 25px;
+  background:#eaf3ff;
+  border-radius:14px;
+  padding:18px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:14px;
+}
+.info-card{
+  background:transparent;
+  padding:10px;
+  border-radius:12px;
+}
+.info-title{
+  font-weight:bold;
+  margin:0 0 6px;
+}
+.info-text{
+  margin:0;
+  color:#333;
+  font-size:14px;
+}
+
+.promo{
+  margin-top: 25px;
+}
+.promo-box{
+  background:#f7f7f7;
+  border-radius:16px;
+  overflow:hidden;
+  display:flex;
+  gap:16px;
+}
+.promo-img{
+  width:55%;
+  object-fit:cover;
+}
+.promo-text{
+  padding:18px;
+}
+.promo-title{
+  font-weight:bold;
+  margin:0 0 10px;
+  font-size:20px;
+}
+.promo-desc{
+  margin:0 0 12px;
+  color:#444;
+  font-size:14px;
+}
+.btn{
+  background:#1e2a4a;
+  color:white;
+  border:none;
+  padding:10px 14px;
+  border-radius:999px;
+  cursor:pointer;
+}
+
+.promo-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:18px;
+}
+.promo-card{
+  background:#f7f7f7;
+  border-radius:14px;
+  overflow:hidden;
+  padding-bottom:12px;
+}
+.promo-card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+.promo-small{
+  font-weight:bold;
+  margin:12px 12px 6px;
+}
+.promo-card .promo-desc{
+  margin:0 12px 12px;
+}
+.promo-card .btn{
+  margin-left:12px;
+}
+
+.text-section{
+  margin-top: 35px;
+}
+.text-section h3{
+  margin: 18px 0 10px;
+}
+.text-section p{
+  margin:0 0 12px;
+  color:#333;
+  line-height:1.6;
+  font-size:14px;
 }
